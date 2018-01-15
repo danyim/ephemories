@@ -47,6 +47,7 @@ const TextCounter = styled.span`
 class TextInput extends React.Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
+    onChange: PropTypes.func,
     width: PropTypes.string,
     limit: PropTypes.number,
     expandLimit: PropTypes.number,
@@ -55,6 +56,7 @@ class TextInput extends React.Component {
 
   static defaultProps = {
     width: '8rem',
+    onChange: () => {},
     limit: 50,
     expandLimit: 25,
     margin: '0 .7rem'
@@ -91,6 +93,8 @@ class TextInput extends React.Component {
     this.setState({
       value
     })
+
+    this.props.onChange(e)
   }
 
   render() {
