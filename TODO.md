@@ -1,4 +1,5 @@
-- Display a basic map
+- [Style] Fade in on load
+- Display a basic world map
     - Create a ThreeJS visualization of live ephemories being posted
 - Allow users to append an image URL or link to their ephemory
 - Allow users to attach a geographical pin to their ephemory
