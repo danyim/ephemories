@@ -6,14 +6,18 @@
 
 .container {
   margin: auto;
-  border-radius: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  transition: 0.5s all;
+  border-radius: 1rem;
   box-shadow: 0 0 10rem 2rem rgba(0, 0, 0, 0.1);
-  min-height: 200px;
-  min-width: 300px;
-  padding: 2rem 4rem;
-  color: black;
+  width: 50vw;
+  padding: 2rem 3rem;
+  color: #000;
+  background-color: #fff;
+  line-height: 3rem;
 }
 
-.label {
+.container .label {
   font-size: 1.5rem;
 }
