@@ -1,0 +1,5 @@
+- Display a basic map
+    - Create a ThreeJS visualization of live ephemories being posted
+- Allow users to append an image URL or link to their ephemory
+- Allow users to attach a geographical pin to their ephemory
+- Allow for public/private ephemories via Firebase (local storage, login, user data)
