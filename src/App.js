@@ -34,6 +34,7 @@ class App extends Component {
           <TextInput
             name="preposition"
             limit={25}
+            expandLimit={13}
             onChange={this.handleInputChange}
           />
           <span className={styles.label}>where</span>

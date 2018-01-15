@@ -8,7 +8,6 @@
   margin: auto;
   display: flex;
   flex-flow: row wrap;
-  transition: 0.5s all;
   border-radius: 1rem;
   box-shadow: 0 0 10rem 2rem rgba(0, 0, 0, 0.1);
   width: 50vw;
@@ -16,6 +15,7 @@
   color: #000;
   background-color: #fff;
   line-height: 3rem;
+  transition: 0.5s all;
 }
 
 .container .label {

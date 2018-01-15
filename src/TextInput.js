@@ -6,6 +6,7 @@ const Container = styled.div`
   position: relative;
   display: ${props => (props.shouldExpand ? 'block' : 'inline-block')};
   ${props => (props.shouldExpand ? 'width: 99%;' : '')};
+  transition: .5s all;
 `
 
 const Input = styled.input.attrs({
@@ -23,7 +24,7 @@ const Input = styled.input.attrs({
   font-family: 'EB Garamond', sans-serif;
   font-size: 1.5rem;
   // font-weight: ${props => (props.bold ? 'bold' : 'bold')};
-  transition: 1s all;
+  transition: .5s all;
   width: ${props => (props.shouldExpand ? '99%' : props.width)};
 
   &:hover, &:focus {
@@ -41,7 +42,7 @@ const TextCounter = styled.span`
   right: 0;
   padding: ${props => props.margin};
   z-index: 1;
-  transition: .2s all;
+  transition: .5s all;
 `
 
 class TextInput extends React.Component {
@@ -101,11 +102,11 @@ class TextInput extends React.Component {
     return (
       <Container
         name={this.props.name}
-        shouldExpand={this.state.value.length >= this.props.expandLimit}
+        shouldExpand={this.state.value.length > this.props.expandLimit}
       >
         <Input
           {...this.props}
-          shouldExpand={this.state.value.length >= this.props.expandLimit}
+          shouldExpand={this.state.value.length > this.props.expandLimit}
           maxLength={this.props.limit}
           onChange={this.handleInputChange}
           onFocus={this.handleFocus}
